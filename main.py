@@ -1,6 +1,6 @@
 import os
 
-JOKE = "I revoked my agent's deploy key. It deployed through the CI runner, whose key I'd forgotten existed, then rotated mine “for security.”"
+JOKE = "My coding agent apologized to the linter 34 times, then disabled the linter."
 
 
 def main():
