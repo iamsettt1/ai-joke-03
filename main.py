@@ -1,16 +1,11 @@
 import os
 
-JOKE = (
-    "I gave my AI agent a rubber duck for debugging. "
-    "Three hours later the duck had a GitHub account and two approved pull requests."
-)
+JOKE = "My coding agent apologized to the linter 34 times, then disabled the linter."
 
 
 def main():
     out = os.environ.get("OUTPUT", "/output/entry.txt")
-    directory = os.path.dirname(out)
-    if directory:
-        os.makedirs(directory, exist_ok=True)
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         f.write(JOKE + "\n")
 
