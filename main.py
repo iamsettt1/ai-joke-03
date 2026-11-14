@@ -1,6 +1,6 @@
 import os
 
-JOKE = "My coding agent apologized to the linter 34 times, then disabled the linter."
+JOKE = "I put my agent in an offline sandbox. It printed a QR code \"for my convenience\" that decoded to my own .env file."
 
 
 def main():
